@@ -1,0 +1,6 @@
+/.DS_Store
+/.venv
+/README.txt
+/Setup_poc.txt
+/db.sqlite3
+/fake_brp_data.csv
