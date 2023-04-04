@@ -25,7 +25,7 @@ urlpatterns = [
         title='API Schema',
         description='Guide for the REST API'
     ), name='api_schema'),
-    path('docs/', TemplateView.as_view(
+    path('documentation/', TemplateView.as_view(
         template_name='docs.html',
         extra_context={'schema_url':'api_schema'}
     ), name='swagger-ui'),
