@@ -1,0 +1,436 @@
+id,messageId,message
+1,a,"[
+  {
+    ""id"": 1,
+    ""aNummer"": ""1"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""440-24-1694"",
+        ""naam"": ""Maurits van Breukeleveen"",
+        ""geboortePlaats"": ""Enschede"",
+        ""geboorteLand"": ""India"",
+        ""geboorteDatum"": ""1914-05-01"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""+31(0)23-7273319""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Duitse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""7123SH"",
+            ""huidigeHuisnummer"": 431,
+            ""huidigeWoonplaats"": ""Maastricht"",
+            ""huidigeAdresGeldig"": ""1971-01-06""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""7126FN"",
+            ""vorigeHuisnummer"": 769,
+            ""vorigeWoonplaats"": ""Dirksland"",
+            ""vorigeAdresGeldig"": ""1940-09-10""
+          }
+        ]
+      }
+    ]
+  }
+]"
+2,b,"[
+  {
+    ""id"": 10,
+    ""aNummer"": ""10"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""208-32-6179"",
+        ""naam"": ""Linn Kolen"",
+        ""geboortePlaats"": ""Syracuse"",
+        ""geboorteLand"": ""Nederland"",
+        ""geboorteDatum"": ""2018-10-06"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""096-5929664""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Japanse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""6487WC"",
+            ""huidigeHuisnummer"": 558,
+            ""huidigeWoonplaats"": ""Losser"",
+            ""huidigeAdresGeldig"": ""1917-12-20""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""5495RS"",
+            ""vorigeHuisnummer"": 873,
+            ""vorigeWoonplaats"": ""Alphen a/d Rijn"",
+            ""vorigeAdresGeldig"": ""1993-09-18""
+          }
+        ]
+      }
+    ]
+  }
+]"
+3,c,"[
+  {
+    ""id"": 2,
+    ""aNummer"": ""2"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""333-46-4830"",
+        ""naam"": ""Sylvie van Luxemburg-van Bentheim"",
+        ""geboortePlaats"": ""Athene"",
+        ""geboorteLand"": ""India"",
+        ""geboorteDatum"": ""1982-11-14"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""+31(0)091-318699""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Argentijnse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""5398VU"",
+            ""huidigeHuisnummer"": 578,
+            ""huidigeWoonplaats"": ""Den Haag"",
+            ""huidigeAdresGeldig"": ""1950-10-08""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""2198NF"",
+            ""vorigeHuisnummer"": 849,
+            ""vorigeWoonplaats"": ""Middelburg"",
+            ""vorigeAdresGeldig"": ""1970-10-15""
+          }
+        ]
+      }
+    ]
+  }
+]"
+4,d,"[
+  {
+    ""id"": 3,
+    ""aNummer"": ""3"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""700-68-1039"",
+        ""naam"": ""Damian Willems van Lier-Paillet"",
+        ""geboortePlaats"": ""Kampala"",
+        ""geboorteLand"": ""Argentinië"",
+        ""geboorteDatum"": ""2004-07-07"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""+31(0)765-956379""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Nederlandse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""6873QB"",
+            ""huidigeHuisnummer"": 929,
+            ""huidigeWoonplaats"": ""Lisse"",
+            ""huidigeAdresGeldig"": ""1973-08-14""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""7226WH"",
+            ""vorigeHuisnummer"": 716,
+            ""vorigeWoonplaats"": ""Middelburg"",
+            ""vorigeAdresGeldig"": ""2021-08-03""
+          }
+        ]
+      }
+    ]
+  }
+]"
+5,e,"[
+  {
+    ""id"": 4,
+    ""aNummer"": ""4"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""597-26-6786"",
+        ""naam"": ""Lieve Hehl"",
+        ""geboortePlaats"": ""Syracuse"",
+        ""geboorteLand"": ""India"",
+        ""geboorteDatum"": ""1932-04-20"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""(0498) 391654""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Nederlandse"",
+        ""nationaliteit2"": ""Indiaase""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""2784FY"",
+            ""huidigeHuisnummer"": 222,
+            ""huidigeWoonplaats"": ""Eindhoven"",
+            ""huidigeAdresGeldig"": ""1940-03-13""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""7821ID"",
+            ""vorigeHuisnummer"": 558,
+            ""vorigeWoonplaats"": ""Middelburg"",
+            ""vorigeAdresGeldig"": ""1972-10-13""
+          }
+        ]
+      }
+    ]
+  }
+]"
+6,f,"[
+  {
+    ""id"": 5,
+    ""aNummer"": ""5"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""338-49-9753"",
+        ""naam"": ""Marijn van Mare"",
+        ""geboortePlaats"": ""Kampala"",
+        ""geboorteLand"": ""Nederland"",
+        ""geboorteDatum"": ""2015-12-13"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""008-3184236""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Deense"",
+        ""nationaliteit2"": ""Indiaase""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""3399LQ"",
+            ""huidigeHuisnummer"": 395,
+            ""huidigeWoonplaats"": ""Losser"",
+            ""huidigeAdresGeldig"": ""1939-02-17""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""3577WL"",
+            ""vorigeHuisnummer"": 708,
+            ""vorigeWoonplaats"": ""Dirksland"",
+            ""vorigeAdresGeldig"": ""2008-07-14""
+          }
+        ]
+      }
+    ]
+  }
+]"
+7,g,"[
+  {
+    ""id"": 6,
+    ""aNummer"": ""6"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""352-73-6001"",
+        ""naam"": ""Luuk Briere"",
+        ""geboortePlaats"": ""Buenos Aires"",
+        ""geboorteLand"": ""Uganda"",
+        ""geboorteDatum"": ""1985-11-21"",
+        ""geslachtsaanduiding"": ""V"",
+        ""telefoon"": ""+31(0)882 883796""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Duitse"",
+        ""nationaliteit2"": ""Braziliaanse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""1227AG"",
+            ""huidigeHuisnummer"": 935,
+            ""huidigeWoonplaats"": ""Oldenzaal"",
+            ""huidigeAdresGeldig"": ""1984-12-26""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""2833YF"",
+            ""vorigeHuisnummer"": 309,
+            ""vorigeWoonplaats"": ""Dirksland"",
+            ""vorigeAdresGeldig"": ""1995-07-30""
+          }
+        ]
+      }
+    ]
+  }
+]"
+8,h,"[
+  {
+    ""id"": 7,
+    ""aNummer"": ""7"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""220-89-5438"",
+        ""naam"": ""Ian van de Eerenbeemt"",
+        ""geboortePlaats"": ""Athene"",
+        ""geboorteLand"": ""Uganda"",
+        ""geboorteDatum"": ""1994-08-21"",
+        ""geslachtsaanduiding"": ""V"",
+        ""telefoon"": ""+31(0)93 0538902""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Deense"",
+        ""nationaliteit2"": ""Italiaanse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""4347YD"",
+            ""huidigeHuisnummer"": 480,
+            ""huidigeWoonplaats"": ""Losser"",
+            ""huidigeAdresGeldig"": ""1993-01-14""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""5527NU"",
+            ""vorigeHuisnummer"": 153,
+            ""vorigeWoonplaats"": ""Alphen a/d Rijn"",
+            ""vorigeAdresGeldig"": ""1957-06-03""
+          }
+        ]
+      }
+    ]
+  }
+]"
+9,i,"[
+  {
+    ""id"": 8,
+    ""aNummer"": ""8"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""157-81-5685"",
+        ""naam"": ""Fien Buijs"",
+        ""geboortePlaats"": ""Buenos Aires"",
+        ""geboorteLand"": ""Italië"",
+        ""geboorteDatum"": ""1923-12-20"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""+31087 875136""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Nederlandse"",
+        ""nationaliteit2"": ""Italiaanse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""8895SR"",
+            ""huidigeHuisnummer"": 865,
+            ""huidigeWoonplaats"": ""Lisse"",
+            ""huidigeAdresGeldig"": ""1927-02-12""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""3326LX"",
+            ""vorigeHuisnummer"": 189,
+            ""vorigeWoonplaats"": ""Den Bosch"",
+            ""vorigeAdresGeldig"": ""1902-06-09""
+          }
+        ]
+      }
+    ]
+  }
+]"
+10,j,"[
+  {
+    ""id"": 9,
+    ""aNummer"": ""9"",
+    ""volgnummer"": 1,
+    ""persoon"": [
+      {
+        ""bsn"": ""311-31-2142"",
+        ""naam"": ""Loek Blees-Oemencs"",
+        ""geboortePlaats"": ""Den Haag"",
+        ""geboorteLand"": ""Uganda"",
+        ""geboorteDatum"": ""1939-09-27"",
+        ""geslachtsaanduiding"": ""V"",
+        ""telefoon"": ""+31(0)39 9136415""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Japanse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""2436HM"",
+            ""huidigeHuisnummer"": 533,
+            ""huidigeWoonplaats"": ""Oldenzaal"",
+            ""huidigeAdresGeldig"": ""1972-05-01""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""8598HO"",
+            ""vorigeHuisnummer"": 564,
+            ""vorigeWoonplaats"": ""Vianen"",
+            ""vorigeAdresGeldig"": ""1974-01-12""
+          }
+        ]
+      }
+    ]
+  }
+]"
