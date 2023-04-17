@@ -8,7 +8,7 @@ from rest_framework import status
 # messages calls
 
 ## List messages
-@api_view(['GET', 'POST'])
+@api_view(['GET'])
 def listMessages(request):
 
     if request.method == 'GET':

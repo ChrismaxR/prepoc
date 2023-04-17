@@ -109,7 +109,14 @@ fake_brp_summary_data <- fake_brp_messages_json |>
     senderId = sample(x = LETTERS[1:2], size = 10, replace = T),
     recipientId = if_else(senderId == "A", "B", "A"),
     callResponseTimeMs = sample(x = 1.1:3.4, size = 10, replace = T), 
-    callResponse = sample(x = c("401 UNAUTHORIZED", "200 OK", "400 BAD REQUEST", "201 CREATED", "404 NOT FOUND", "500 INTERNAL SERVER ERROR"), size = 10, replace = T)
+    callResponse = sample(
+      x = c(
+        "200 OK", "201 CREATED", 
+        "401 UNAUTHORIZED", "400 BAD REQUEST", "404 NOT FOUND",
+        "500 INTERNAL SERVER ERROR"
+      ), 
+      size = 10, 
+      replace = T)
   )
 
 glimpse(fake_brp_summary_data)
