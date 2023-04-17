@@ -1,6 +1,6 @@
 from django.http import JsonResponse
-from .models import persoonsLijst, messages, messagesSummary
-from .serializers import persoonsLijstSerializer, messagesSerializer, messagesSummarySerializer
+from .models import messages, messagesSummary
+from .serializers import messagesSerializer, messagesSummarySerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -16,11 +16,11 @@ def listMessages(request):
         serializer = messagesSerializer(ms, many=True)
         return Response(serializer.data)
     
-    if request.method == 'POST':
-        serializer = messagesSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status = status.HTTP_201_CREATED)
+    #if request.method == 'POST':
+    #    serializer = messagesSerializer(data=request.data)
+    #    if serializer.is_valid():
+    #        serializer.save()
+    #        return Response(serializer.data, status = status.HTTP_201_CREATED)
 
 
 ## Get messages calls    
