@@ -21,8 +21,8 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('api_schema/', get_schema_view(
-        title='API Schema Christian - MBS uitfaseren',
-        description='Conceptuele benadering voor REST API'
+        title='Prototype MBS API',
+        description=''
     ), name='api_schema'),
     path('documentation/', TemplateView.as_view(
         template_name='docs.html',
@@ -34,8 +34,8 @@ urlpatterns = [
     ), name='swagger-ui'),
     path('admin/', admin.site.urls),
     path('listMessages/', views.listMessages),
+    path('messages/', views.bulkMessages),
     path('messages/<int:id>', views.getMessages),
     path('summarizeMessages/', views.summarizeMessages),
-    #path('persoonslijsten/', views.persoonsLijst_list), 
-    #path('persoonslijsten/<int:id>', views.persoonsLijst_details),
+
 ]

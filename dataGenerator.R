@@ -11,7 +11,17 @@ set.seed(42)
 # Produce bespoke fake data to simulate API data
 
 # Messages data -----------------------
-## intended for the db.prepoc_messages table
+
+## ListMessages data -> intended for the db.prepoc_messageslist table
+
+fakeListMessages <- tibble::tibble(
+  id = c(1:10),
+  messageId = letters[1:10]
+)
+
+# write_csv(fakeListMessages, here::here("prepoc", "fake_brp_listMessage_data.csv"))
+
+## MessagesData -> intended for the db.prepoc_messages table
 
 geboorteplaats_opties <- c("Den Haag", "Rotterdam", "Enschede", "Franeker", "Athene", "Buenos Aires", "Berlijn", "Syracuse", "Kampala", "Mumbai")
 geboorteland_opties <- c("Nederland", "Griekenland", "Argentinië", "Duitsland", "Italië", "Uganda", "India")
@@ -24,55 +34,49 @@ recipient_opties <- c("A", "B")
 
 fake_brp_messages <- tibble::tibble(
     id = seq(sample_size),
-    aNummer = as.character(seq(sample_size)),
-    bsn = r_national_identification_numbers(sample_size), 
-    naam = ch_name(n = sample_size, locale = "nl_NL"),
-    telefoon = ch_phone_number(n = sample_size, locale = "nl_NL"),
-    geboorteDatum = r_date_of_births(sample_size),
-    geboortePlaats = sample(geboorteplaats_opties, size = sample_size, replace = T),
-    geboorteLand = sample(geboorteland_opties, size = sample_size, replace = T),
-    geslachtsaanduiding = sample(geslacht_opties, size = sample_size, replace = T),
-    nationaliteit1 = sample(nationaliteiten_opties1, size = sample_size, replace = T),
-    nationaliteit2 = sample(nationaliteiten_opties2, size = sample_size, replace = T), 
-    huidigePostcode = str_c(
-        sample(1:9, sample_size, replace = TRUE),
-        sample(1:9, sample_size, replace = TRUE),
-        sample(1:9, sample_size, replace = TRUE),
-        sample(1:9, sample_size, replace = TRUE),
-        sample(LETTERS, sample_size, replace = TRUE),
-        sample(LETTERS, sample_size, replace = TRUE),
-        sep = ""
-    ), 
-    huidigeHuisnummer = sample(1:999, size = sample_size, replace = T),
-    huidigeWoonplaats = sample(gemeenten_opties1, size = sample_size, replace = T),
-    huidigeAdresGeldig = r_date_of_births(sample_size),
-    vorigePostcode = str_c(
-      sample(1:9, sample_size, replace = TRUE),
-      sample(1:9, sample_size, replace = TRUE),
-      sample(1:9, sample_size, replace = TRUE),
-      sample(1:9, sample_size, replace = TRUE),
-      sample(LETTERS, sample_size, replace = TRUE),
-      sample(LETTERS, sample_size, replace = TRUE),
-      sep = ""
-    ), 
-    vorigeHuisnummer = sample(1:999, size = sample_size, replace = T),
-    vorigeWoonplaats = sample(gemeenten_opties2, size = sample_size, replace = T),
-    vorigeAdresGeldig = r_date_of_births(sample_size),
-    volgnummer = 1
+    # aNummer = as.character(seq(sample_size)),
+    # bsn = r_national_identification_numbers(sample_size), 
+    # naam = ch_name(n = sample_size, locale = "nl_NL"),
+    # telefoon = ch_phone_number(n = sample_size, locale = "nl_NL"),
+    # geboorteDatum = r_date_of_births(sample_size),
+    # geboortePlaats = sample(geboorteplaats_opties, size = sample_size, replace = T),
+    # geboorteLand = sample(geboorteland_opties, size = sample_size, replace = T),
+    # geslachtsaanduiding = sample(geslacht_opties, size = sample_size, replace = T),
+    # nationaliteit1 = sample(nationaliteiten_opties1, size = sample_size, replace = T),
+    # nationaliteit2 = sample(nationaliteiten_opties2, size = sample_size, replace = T), 
+    # huidigePostcode = str_c(
+    #     sample(1:9, sample_size, replace = TRUE),
+    #     sample(1:9, sample_size, replace = TRUE),
+    #     sample(1:9, sample_size, replace = TRUE),
+    #     sample(1:9, sample_size, replace = TRUE),
+    #     sample(LETTERS, sample_size, replace = TRUE),
+    #     sample(LETTERS, sample_size, replace = TRUE),
+    #     sep = ""
+    # ), 
+    # huidigeHuisnummer = sample(1:999, size = sample_size, replace = T),
+    # huidigeWoonplaats = sample(gemeenten_opties1, size = sample_size, replace = T),
+    # huidigeAdresGeldig = r_date_of_births(sample_size),
+    # vorigePostcode = str_c(
+    #   sample(1:9, sample_size, replace = TRUE),
+    #   sample(1:9, sample_size, replace = TRUE),
+    #   sample(1:9, sample_size, replace = TRUE),
+    #   sample(1:9, sample_size, replace = TRUE),
+    #   sample(LETTERS, sample_size, replace = TRUE),
+    #   sample(LETTERS, sample_size, replace = TRUE),
+    #   sep = ""
+    # ), 
+    # vorigeHuisnummer = sample(1:999, size = sample_size, replace = T),
+    # vorigeWoonplaats = sample(gemeenten_opties2, size = sample_size, replace = T),
+    # vorigeAdresGeldig = r_date_of_births(sample_size),
+    # volgnummer = 1, 
+    message = "message"
 )
 
 
 fake_brp_messages_nested <- fake_brp_messages |> 
-  group_by(aNummer, naam, recipientId) |> 
+  group_by(id) |> 
   nest(
-    recipient = recipientId,
-    persoon = c(bsn, naam, geboortePlaats, geboorteLand, geboorteDatum, geslachtsaanduiding, telefoon),
-    huidigeAdres = c(huidigePostcode, huidigeHuisnummer, huidigeWoonplaats, huidigeAdresGeldig),
-    vorigeAdres = c(vorigePostcode, vorigeHuisnummer, vorigeWoonplaats, vorigeAdresGeldig),
-    nationaliteit = c(nationaliteit1, nationaliteit2)
-  ) |> 
-  nest(
-    verblijfplaats = c(huidigeAdres, vorigeAdres)
+    messages = message
   ) |> 
   group_split(id, .keep = T)
 
@@ -92,9 +96,10 @@ fake_brp_messages_json <- map(
 # Check fake brp data
 glimpse(fake_brp_messages_json)
 
-#write_csv(fake_brp_messages_json, here::here("prepoc", "fake_brp_message_data.csv"))
+write_csv(fake_brp_messages_json, here::here("prepoc", "fake_brp_message_data.csv"))
 
-# Make meta data table -----------------------
+
+# Make summary data table -----------------------
 
 
 messageSize = sample(x = 15:30000, size = 10, replace = T)

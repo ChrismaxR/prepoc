@@ -1,15 +1,15 @@
 from rest_framework import serializers
-from .models import persoonsLijst, messages, messagesSummary
+from .models import messages, messagesSummary, messagesList
 
-class persoonsLijstSerializer(serializers.ModelSerializer):
+class messagesListSerializer(serializers.ModelSerializer):
      class Meta:
-          model = persoonsLijst
-          fields = ['aNummer','bsn','naam','telefoon','geboorteDatum','geboortePlaats','geboorteLand','geslachtsaanduiding','nationaliteit1','nationaliteit2','huidigePostcode','huidigeHuisnummer','huidigeWoonplaats','huidigeAdresGeldig','vorigePostcode','vorigeHuisnummer','vorigeWoonplaats','vorigeAdresGeldig','volgnummer']
+          model = messagesList
+          fields = ['messageId']
 
 class messagesSerializer(serializers.ModelSerializer):
      class Meta:
           model = messages
-          fields = ['messageId','message']
+          fields = ['messageId', 'message']
 
 class messagesSummarySerializer(serializers.ModelSerializer):
      class Meta:

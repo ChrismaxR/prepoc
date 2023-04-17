@@ -1,30 +1,32 @@
 from django.http import JsonResponse
 from .models import messages, messagesSummary
-from .serializers import messagesSerializer, messagesSummarySerializer
+from .serializers import messagesSerializer, messagesSummarySerializer, messagesListSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
 # messages calls
-
 ## List messages
 @api_view(['GET'])
 def listMessages(request):
 
     if request.method == 'GET':
+        lms = messages.objects.all()
+        serializer = messagesListSerializer(lms, many=True)
+        return Response(serializer.data)
+
+## Bulk messages
+@api_view(['GET'])
+def bulkMessages(request):
+
+    if request.method == 'GET':
         ms = messages.objects.all()
         serializer = messagesSerializer(ms, many=True)
         return Response(serializer.data)
-    
-    #if request.method == 'POST':
-    #    serializer = messagesSerializer(data=request.data)
-    #    if serializer.is_valid():
-    #        serializer.save()
-    #        return Response(serializer.data, status = status.HTTP_201_CREATED)
 
 
 ## Get messages calls    
-@api_view(['GET', 'PUT', 'DELETE'])
+@api_view(['GET', 'PUT'])
 def getMessages(request, id):
 
     try:
@@ -42,10 +44,6 @@ def getMessages(request, id):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    elif request.method == 'DELETE':
-        ms.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 # messagesSummary call
@@ -57,9 +55,4 @@ def summarizeMessages(request):
         mss = messagesSummary.objects.all()
         serializer = messagesSummarySerializer(mss, many=True)
         return Response(serializer.data)
-    
-    #if request.method == 'POST':
-    #    serializer = messagesSummarySerializer(data=request.data)
-    #    if serializer.is_valid():
-    #        serializer.save()
-    #        return Response(serializer.data, status = status.HTTP_201_CREATED)
+
