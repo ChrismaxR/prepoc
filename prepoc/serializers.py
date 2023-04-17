@@ -1,6 +1,5 @@
 from rest_framework import serializers
-from .models import persoonsLijst
-from .models import messages
+from .models import persoonsLijst, messages, messagesSummary
 
 class persoonsLijstSerializer(serializers.ModelSerializer):
      class Meta:
@@ -11,3 +10,8 @@ class messagesSerializer(serializers.ModelSerializer):
      class Meta:
           model = messages
           fields = ['messageId','message']
+
+class messagesSummarySerializer(serializers.ModelSerializer):
+     class Meta:
+          model = messagesSummary
+          fields = ['messageId','generationDate','endpoint','callMethods','messageSize','senderId','recipientId','callResponseTimeMs','callResponse']

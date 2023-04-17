@@ -1,104 +1,72 @@
-id,messageId,message
+id,messageId,message,recipientId
 1,a,"[
   {
     ""id"": 1,
     ""aNummer"": ""1"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""A""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""440-24-1694"",
-        ""naam"": ""Maurits van Breukeleveen"",
-        ""geboortePlaats"": ""Enschede"",
-        ""geboorteLand"": ""India"",
-        ""geboorteDatum"": ""1914-05-01"",
+        ""bsn"": ""402-12-1480"",
+        ""naam"": ""Wout van Hagen"",
+        ""geboortePlaats"": ""Kampala"",
+        ""geboorteLand"": ""Nederland"",
+        ""geboorteDatum"": ""1955-10-25"",
         ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""+31(0)23-7273319""
+        ""telefoon"": ""+31(0)511 701476""
       }
     ],
     ""nationaliteit"": [
       {
-        ""nationaliteit1"": ""Duitse""
+        ""nationaliteit1"": ""Nederlandse"",
+        ""nationaliteit2"": ""Ugandese""
       }
     ],
     ""verblijfplaats"": [
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""7123SH"",
-            ""huidigeHuisnummer"": 431,
+            ""huidigePostcode"": ""9138LC"",
+            ""huidigeHuisnummer"": 988,
             ""huidigeWoonplaats"": ""Maastricht"",
-            ""huidigeAdresGeldig"": ""1971-01-06""
+            ""huidigeAdresGeldig"": ""1962-06-06""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""7126FN"",
-            ""vorigeHuisnummer"": 769,
-            ""vorigeWoonplaats"": ""Dirksland"",
-            ""vorigeAdresGeldig"": ""1940-09-10""
+            ""vorigePostcode"": ""6995BM"",
+            ""vorigeHuisnummer"": 337,
+            ""vorigeWoonplaats"": ""Groningen"",
+            ""vorigeAdresGeldig"": ""1976-07-10""
           }
         ]
       }
     ]
   }
-]"
+]",B
 2,b,"[
   {
     ""id"": 10,
     ""aNummer"": ""10"",
     ""volgnummer"": 1,
-    ""persoon"": [
+    ""recipient"": [
       {
-        ""bsn"": ""208-32-6179"",
-        ""naam"": ""Linn Kolen"",
-        ""geboortePlaats"": ""Syracuse"",
-        ""geboorteLand"": ""Nederland"",
-        ""geboorteDatum"": ""2018-10-06"",
-        ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""096-5929664""
+        ""recipientId"": ""B""
       }
     ],
-    ""nationaliteit"": [
-      {
-        ""nationaliteit1"": ""Japanse""
-      }
-    ],
-    ""verblijfplaats"": [
-      {
-        ""huidigeAdres"": [
-          {
-            ""huidigePostcode"": ""6487WC"",
-            ""huidigeHuisnummer"": 558,
-            ""huidigeWoonplaats"": ""Losser"",
-            ""huidigeAdresGeldig"": ""1917-12-20""
-          }
-        ],
-        ""vorigeAdres"": [
-          {
-            ""vorigePostcode"": ""5495RS"",
-            ""vorigeHuisnummer"": 873,
-            ""vorigeWoonplaats"": ""Alphen a/d Rijn"",
-            ""vorigeAdresGeldig"": ""1993-09-18""
-          }
-        ]
-      }
-    ]
-  }
-]"
-3,c,"[
-  {
-    ""id"": 2,
-    ""aNummer"": ""2"",
-    ""volgnummer"": 1,
     ""persoon"": [
       {
-        ""bsn"": ""333-46-4830"",
-        ""naam"": ""Sylvie van Luxemburg-van Bentheim"",
-        ""geboortePlaats"": ""Athene"",
-        ""geboorteLand"": ""India"",
-        ""geboorteDatum"": ""1982-11-14"",
-        ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""+31(0)091-318699""
+        ""bsn"": ""981-67-1726"",
+        ""naam"": ""Selena van Susa"",
+        ""geboortePlaats"": ""Buenos Aires"",
+        ""geboorteLand"": ""Duitsland"",
+        ""geboorteDatum"": ""1987-08-12"",
+        ""geslachtsaanduiding"": ""V"",
+        ""telefoon"": ""+31333-080030""
       }
     ],
     ""nationaliteit"": [
@@ -110,38 +78,43 @@ id,messageId,message
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""5398VU"",
-            ""huidigeHuisnummer"": 578,
-            ""huidigeWoonplaats"": ""Den Haag"",
-            ""huidigeAdresGeldig"": ""1950-10-08""
+            ""huidigePostcode"": ""6556BS"",
+            ""huidigeHuisnummer"": 247,
+            ""huidigeWoonplaats"": ""Maastricht"",
+            ""huidigeAdresGeldig"": ""1993-03-24""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""2198NF"",
-            ""vorigeHuisnummer"": 849,
-            ""vorigeWoonplaats"": ""Middelburg"",
-            ""vorigeAdresGeldig"": ""1970-10-15""
+            ""vorigePostcode"": ""1459JO"",
+            ""vorigeHuisnummer"": 281,
+            ""vorigeWoonplaats"": ""Apeldoorn"",
+            ""vorigeAdresGeldig"": ""1956-01-08""
           }
         ]
       }
     ]
   }
-]"
-4,d,"[
+]",A
+3,c,"[
   {
-    ""id"": 3,
-    ""aNummer"": ""3"",
+    ""id"": 2,
+    ""aNummer"": ""2"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""A""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""700-68-1039"",
-        ""naam"": ""Damian Willems van Lier-Paillet"",
+        ""bsn"": ""123-50-8325"",
+        ""naam"": ""Alexander Linschoten"",
         ""geboortePlaats"": ""Kampala"",
-        ""geboorteLand"": ""Argentinië"",
-        ""geboorteDatum"": ""2004-07-07"",
-        ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""+31(0)765-956379""
+        ""geboorteLand"": ""Italië"",
+        ""geboorteDatum"": ""1989-09-21"",
+        ""geslachtsaanduiding"": ""V"",
+        ""telefoon"": ""(043) 8369145""
       }
     ],
     ""nationaliteit"": [
@@ -153,43 +126,97 @@ id,messageId,message
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""6873QB"",
-            ""huidigeHuisnummer"": 929,
-            ""huidigeWoonplaats"": ""Lisse"",
-            ""huidigeAdresGeldig"": ""1973-08-14""
+            ""huidigePostcode"": ""7596GA"",
+            ""huidigeHuisnummer"": 594,
+            ""huidigeWoonplaats"": ""Losser"",
+            ""huidigeAdresGeldig"": ""1988-02-02""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""7226WH"",
-            ""vorigeHuisnummer"": 716,
-            ""vorigeWoonplaats"": ""Middelburg"",
-            ""vorigeAdresGeldig"": ""2021-08-03""
+            ""vorigePostcode"": ""9496PF"",
+            ""vorigeHuisnummer"": 367,
+            ""vorigeWoonplaats"": ""Apeldoorn"",
+            ""vorigeAdresGeldig"": ""1985-02-19""
           }
         ]
       }
     ]
   }
-]"
-5,e,"[
+]",B
+4,d,"[
   {
-    ""id"": 4,
-    ""aNummer"": ""4"",
+    ""id"": 3,
+    ""aNummer"": ""3"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""A""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""597-26-6786"",
-        ""naam"": ""Lieve Hehl"",
-        ""geboortePlaats"": ""Syracuse"",
-        ""geboorteLand"": ""India"",
-        ""geboorteDatum"": ""1932-04-20"",
+        ""bsn"": ""938-98-9490"",
+        ""naam"": ""Kick van Wijland"",
+        ""geboortePlaats"": ""Kampala"",
+        ""geboorteLand"": ""Uganda"",
+        ""geboorteDatum"": ""1924-06-17"",
         ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""(0498) 391654""
+        ""telefoon"": ""+31508 848976""
       }
     ],
     ""nationaliteit"": [
       {
         ""nationaliteit1"": ""Nederlandse"",
+        ""nationaliteit2"": ""Griekse""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""3594LO"",
+            ""huidigeHuisnummer"": 409,
+            ""huidigeWoonplaats"": ""Lisse"",
+            ""huidigeAdresGeldig"": ""2007-01-11""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""8344NA"",
+            ""vorigeHuisnummer"": 904,
+            ""vorigeWoonplaats"": ""Apeldoorn"",
+            ""vorigeAdresGeldig"": ""1943-03-05""
+          }
+        ]
+      }
+    ]
+  }
+]",A
+5,e,"[
+  {
+    ""id"": 4,
+    ""aNummer"": ""4"",
+    ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""A""
+      }
+    ],
+    ""persoon"": [
+      {
+        ""bsn"": ""455-36-3453"",
+        ""naam"": ""Lizz de Bruin"",
+        ""geboortePlaats"": ""Enschede"",
+        ""geboorteLand"": ""Argentinië"",
+        ""geboorteDatum"": ""1981-05-04"",
+        ""geslachtsaanduiding"": ""V"",
+        ""telefoon"": ""+31(0)04 8699970""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Japanse"",
         ""nationaliteit2"": ""Indiaase""
       }
     ],
@@ -197,87 +224,145 @@ id,messageId,message
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""2784FY"",
-            ""huidigeHuisnummer"": 222,
-            ""huidigeWoonplaats"": ""Eindhoven"",
-            ""huidigeAdresGeldig"": ""1940-03-13""
+            ""huidigePostcode"": ""9655ET"",
+            ""huidigeHuisnummer"": 620,
+            ""huidigeWoonplaats"": ""Valkenburg"",
+            ""huidigeAdresGeldig"": ""1931-01-17""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""7821ID"",
-            ""vorigeHuisnummer"": 558,
-            ""vorigeWoonplaats"": ""Middelburg"",
-            ""vorigeAdresGeldig"": ""1972-10-13""
+            ""vorigePostcode"": ""6599YK"",
+            ""vorigeHuisnummer"": 100,
+            ""vorigeWoonplaats"": ""Groningen"",
+            ""vorigeAdresGeldig"": ""1943-06-09""
           }
         ]
       }
     ]
   }
-]"
+]",B
 6,f,"[
   {
     ""id"": 5,
     ""aNummer"": ""5"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""B""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""338-49-9753"",
-        ""naam"": ""Marijn van Mare"",
-        ""geboortePlaats"": ""Kampala"",
+        ""bsn"": ""700-45-8788"",
+        ""naam"": ""Jayda Voortman"",
+        ""geboortePlaats"": ""Rotterdam"",
         ""geboorteLand"": ""Nederland"",
-        ""geboorteDatum"": ""2015-12-13"",
+        ""geboorteDatum"": ""1957-04-16"",
         ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""008-3184236""
+        ""telefoon"": ""+31882-057405""
       }
     ],
     ""nationaliteit"": [
       {
-        ""nationaliteit1"": ""Deense"",
-        ""nationaliteit2"": ""Indiaase""
+        ""nationaliteit1"": ""Argentijnse""
       }
     ],
     ""verblijfplaats"": [
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""3399LQ"",
-            ""huidigeHuisnummer"": 395,
-            ""huidigeWoonplaats"": ""Losser"",
-            ""huidigeAdresGeldig"": ""1939-02-17""
+            ""huidigePostcode"": ""3924RK"",
+            ""huidigeHuisnummer"": 202,
+            ""huidigeWoonplaats"": ""Utrecht"",
+            ""huidigeAdresGeldig"": ""1941-10-19""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""3577WL"",
-            ""vorigeHuisnummer"": 708,
-            ""vorigeWoonplaats"": ""Dirksland"",
-            ""vorigeAdresGeldig"": ""2008-07-14""
+            ""vorigePostcode"": ""5638OM"",
+            ""vorigeHuisnummer"": 710,
+            ""vorigeWoonplaats"": ""Otterlo"",
+            ""vorigeAdresGeldig"": ""1993-02-21""
           }
         ]
       }
     ]
   }
-]"
+]",B
 7,g,"[
   {
     ""id"": 6,
     ""aNummer"": ""6"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""B""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""352-73-6001"",
-        ""naam"": ""Luuk Briere"",
-        ""geboortePlaats"": ""Buenos Aires"",
+        ""bsn"": ""264-14-6467"",
+        ""naam"": ""Dani Rackham"",
+        ""geboortePlaats"": ""Athene"",
         ""geboorteLand"": ""Uganda"",
-        ""geboorteDatum"": ""1985-11-21"",
-        ""geslachtsaanduiding"": ""V"",
-        ""telefoon"": ""+31(0)882 883796""
+        ""geboorteDatum"": ""1985-12-18"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""0115 555319""
       }
     ],
     ""nationaliteit"": [
       {
-        ""nationaliteit1"": ""Duitse"",
+        ""nationaliteit1"": ""Deense"",
+        ""nationaliteit2"": ""Ugandese""
+      }
+    ],
+    ""verblijfplaats"": [
+      {
+        ""huidigeAdres"": [
+          {
+            ""huidigePostcode"": ""5831GI"",
+            ""huidigeHuisnummer"": 73,
+            ""huidigeWoonplaats"": ""Utrecht"",
+            ""huidigeAdresGeldig"": ""1915-01-09""
+          }
+        ],
+        ""vorigeAdres"": [
+          {
+            ""vorigePostcode"": ""1527QZ"",
+            ""vorigeHuisnummer"": 458,
+            ""vorigeWoonplaats"": ""Leiden"",
+            ""vorigeAdresGeldig"": ""1920-10-14""
+          }
+        ]
+      }
+    ]
+  }
+]",B
+8,h,"[
+  {
+    ""id"": 7,
+    ""aNummer"": ""7"",
+    ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""B""
+      }
+    ],
+    ""persoon"": [
+      {
+        ""bsn"": ""721-93-7340"",
+        ""naam"": ""Owen Cadefau"",
+        ""geboortePlaats"": ""Kampala"",
+        ""geboorteLand"": ""Griekenland"",
+        ""geboorteDatum"": ""1983-07-25"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""(0980) 177181""
+      }
+    ],
+    ""nationaliteit"": [
+      {
+        ""nationaliteit1"": ""Deense"",
         ""nationaliteit2"": ""Braziliaanse""
       }
     ],
@@ -285,152 +370,117 @@ id,messageId,message
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""1227AG"",
-            ""huidigeHuisnummer"": 935,
+            ""huidigePostcode"": ""4221MV"",
+            ""huidigeHuisnummer"": 659,
             ""huidigeWoonplaats"": ""Oldenzaal"",
-            ""huidigeAdresGeldig"": ""1984-12-26""
+            ""huidigeAdresGeldig"": ""1987-10-22""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""2833YF"",
-            ""vorigeHuisnummer"": 309,
-            ""vorigeWoonplaats"": ""Dirksland"",
-            ""vorigeAdresGeldig"": ""1995-07-30""
+            ""vorigePostcode"": ""9417FZ"",
+            ""vorigeHuisnummer"": 603,
+            ""vorigeWoonplaats"": ""Apeldoorn"",
+            ""vorigeAdresGeldig"": ""1963-07-21""
           }
         ]
       }
     ]
   }
-]"
-8,h,"[
-  {
-    ""id"": 7,
-    ""aNummer"": ""7"",
-    ""volgnummer"": 1,
-    ""persoon"": [
-      {
-        ""bsn"": ""220-89-5438"",
-        ""naam"": ""Ian van de Eerenbeemt"",
-        ""geboortePlaats"": ""Athene"",
-        ""geboorteLand"": ""Uganda"",
-        ""geboorteDatum"": ""1994-08-21"",
-        ""geslachtsaanduiding"": ""V"",
-        ""telefoon"": ""+31(0)93 0538902""
-      }
-    ],
-    ""nationaliteit"": [
-      {
-        ""nationaliteit1"": ""Deense"",
-        ""nationaliteit2"": ""Italiaanse""
-      }
-    ],
-    ""verblijfplaats"": [
-      {
-        ""huidigeAdres"": [
-          {
-            ""huidigePostcode"": ""4347YD"",
-            ""huidigeHuisnummer"": 480,
-            ""huidigeWoonplaats"": ""Losser"",
-            ""huidigeAdresGeldig"": ""1993-01-14""
-          }
-        ],
-        ""vorigeAdres"": [
-          {
-            ""vorigePostcode"": ""5527NU"",
-            ""vorigeHuisnummer"": 153,
-            ""vorigeWoonplaats"": ""Alphen a/d Rijn"",
-            ""vorigeAdresGeldig"": ""1957-06-03""
-          }
-        ]
-      }
-    ]
-  }
-]"
+]",B
 9,i,"[
   {
     ""id"": 8,
     ""aNummer"": ""8"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""B""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""157-81-5685"",
-        ""naam"": ""Fien Buijs"",
-        ""geboortePlaats"": ""Buenos Aires"",
-        ""geboorteLand"": ""Italië"",
-        ""geboorteDatum"": ""1923-12-20"",
+        ""bsn"": ""631-43-3273"",
+        ""naam"": ""Jurre van Spreuwel-Brandon"",
+        ""geboortePlaats"": ""Franeker"",
+        ""geboorteLand"": ""Uganda"",
+        ""geboorteDatum"": ""1933-08-15"",
         ""geslachtsaanduiding"": ""M"",
-        ""telefoon"": ""+31087 875136""
+        ""telefoon"": ""+3119-8549004""
       }
     ],
     ""nationaliteit"": [
       {
-        ""nationaliteit1"": ""Nederlandse"",
-        ""nationaliteit2"": ""Italiaanse""
+        ""nationaliteit1"": ""Deense""
       }
     ],
     ""verblijfplaats"": [
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""8895SR"",
-            ""huidigeHuisnummer"": 865,
-            ""huidigeWoonplaats"": ""Lisse"",
-            ""huidigeAdresGeldig"": ""1927-02-12""
+            ""huidigePostcode"": ""6744ZJ"",
+            ""huidigeHuisnummer"": 335,
+            ""huidigeWoonplaats"": ""Den Haag"",
+            ""huidigeAdresGeldig"": ""1929-09-24""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""3326LX"",
-            ""vorigeHuisnummer"": 189,
-            ""vorigeWoonplaats"": ""Den Bosch"",
-            ""vorigeAdresGeldig"": ""1902-06-09""
+            ""vorigePostcode"": ""1287WJ"",
+            ""vorigeHuisnummer"": 212,
+            ""vorigeWoonplaats"": ""Otterlo"",
+            ""vorigeAdresGeldig"": ""1986-04-11""
           }
         ]
       }
     ]
   }
-]"
+]",A
 10,j,"[
   {
     ""id"": 9,
     ""aNummer"": ""9"",
     ""volgnummer"": 1,
+    ""recipient"": [
+      {
+        ""recipientId"": ""A""
+      }
+    ],
     ""persoon"": [
       {
-        ""bsn"": ""311-31-2142"",
-        ""naam"": ""Loek Blees-Oemencs"",
-        ""geboortePlaats"": ""Den Haag"",
+        ""bsn"": ""509-12-3551"",
+        ""naam"": ""Amir Wilson-Appelman"",
+        ""geboortePlaats"": ""Kampala"",
         ""geboorteLand"": ""Uganda"",
-        ""geboorteDatum"": ""1939-09-27"",
-        ""geslachtsaanduiding"": ""V"",
-        ""telefoon"": ""+31(0)39 9136415""
+        ""geboorteDatum"": ""1958-11-27"",
+        ""geslachtsaanduiding"": ""M"",
+        ""telefoon"": ""+31904 259390""
       }
     ],
     ""nationaliteit"": [
       {
-        ""nationaliteit1"": ""Japanse""
+        ""nationaliteit1"": ""Deense""
       }
     ],
     ""verblijfplaats"": [
       {
         ""huidigeAdres"": [
           {
-            ""huidigePostcode"": ""2436HM"",
-            ""huidigeHuisnummer"": 533,
-            ""huidigeWoonplaats"": ""Oldenzaal"",
-            ""huidigeAdresGeldig"": ""1972-05-01""
+            ""huidigePostcode"": ""9786VG"",
+            ""huidigeHuisnummer"": 46,
+            ""huidigeWoonplaats"": ""Utrecht"",
+            ""huidigeAdresGeldig"": ""1924-07-01""
           }
         ],
         ""vorigeAdres"": [
           {
-            ""vorigePostcode"": ""8598HO"",
-            ""vorigeHuisnummer"": 564,
-            ""vorigeWoonplaats"": ""Vianen"",
-            ""vorigeAdresGeldig"": ""1974-01-12""
+            ""vorigePostcode"": ""6746SM"",
+            ""vorigeHuisnummer"": 504,
+            ""vorigeWoonplaats"": ""Leiden"",
+            ""vorigeAdresGeldig"": ""1917-12-27""
           }
         ]
       }
     ]
   }
-]"
+]",A

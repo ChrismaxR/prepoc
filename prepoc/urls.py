@@ -28,9 +28,14 @@ urlpatterns = [
         template_name='docs.html',
         extra_context={'schema_url':'api_schema'}
     ), name='swagger-ui'),
+    path('swagger-ui/', TemplateView.as_view(
+        template_name='swagger-ui.html',
+        extra_context={'schema_url':'api_schema'}
+    ), name='swagger-ui'),
     path('admin/', admin.site.urls),
-    path('messages/', views.listMessages),
+    path('listMessages/', views.listMessages),
     path('messages/<int:id>', views.getMessages),
-    path('persoonslijsten/', views.persoonsLijst_list), 
-    path('persoonslijsten/<int:id>', views.persoonsLijst_details),
+    path('summarizeMessages/', views.summarizeMessages),
+    #path('persoonslijsten/', views.persoonsLijst_list), 
+    #path('persoonslijsten/<int:id>', views.persoonsLijst_details),
 ]

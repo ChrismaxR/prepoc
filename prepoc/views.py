@@ -1,50 +1,13 @@
 from django.http import JsonResponse
-from .models import persoonsLijst
-from .models import messages
-from .serializers import persoonsLijstSerializer
-from .serializers import messagesSerializer
+from .models import persoonsLijst, messages, messagesSummary
+from .serializers import persoonsLijstSerializer, messagesSerializer, messagesSummarySerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-@api_view(['GET', 'POST'])
-def persoonsLijst_list(request):
+# messages calls
 
-    if request.method == 'GET':
-        pl = persoonsLijst.objects.all()
-        serializer = persoonsLijstSerializer(pl, many=True)
-        return Response(serializer.data)
-    
-    if request.method == 'POST':
-        serializer = persoonsLijstSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status = status.HTTP_201_CREATED)
-
-@api_view(['GET', 'PUT', 'DELETE'])
-def persoonsLijst_details(request, id):
-
-    try:
-        pl = persoonsLijst.objects.get(pk=id)
-    except persoonsLijst.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
-
-    if request.method == 'GET':
-        serializer = persoonsLijstSerializer(pl)
-        return Response(serializer.data)
-    
-    elif request.method == 'PUT':
-        serializer = persoonsLijstSerializer(pl, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-    elif request.method == 'DELETE':
-        pl.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
-
-#messages calls
+## List messages
 @api_view(['GET', 'POST'])
 def listMessages(request):
 
@@ -58,7 +21,9 @@ def listMessages(request):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status = status.HTTP_201_CREATED)
-        
+
+
+## Get messages calls    
 @api_view(['GET', 'PUT', 'DELETE'])
 def getMessages(request, id):
 
@@ -81,3 +46,20 @@ def getMessages(request, id):
     elif request.method == 'DELETE':
         ms.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+# messagesSummary call
+
+@api_view(['GET'])
+def summarizeMessages(request):
+
+    if request.method == 'GET':
+        mss = messagesSummary.objects.all()
+        serializer = messagesSummarySerializer(mss, many=True)
+        return Response(serializer.data)
+    
+    #if request.method == 'POST':
+    #    serializer = messagesSummarySerializer(data=request.data)
+    #    if serializer.is_valid():
+    #        serializer.save()
+    #        return Response(serializer.data, status = status.HTTP_201_CREATED)
