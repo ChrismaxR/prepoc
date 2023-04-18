@@ -19,7 +19,7 @@ fakeListMessages <- tibble::tibble(
   messageId = letters[1:10]
 )
 
-# write_csv(fakeListMessages, here::here("prepoc", "fake_brp_listMessage_data.csv"))
+# write_csv(fakeListMessages, here::here("data", "fake_brp_listMessage_data.csv"))
 
 ## MessagesData -> intended for the db.prepoc_messages table
 
@@ -96,7 +96,7 @@ fake_brp_messages_json <- map(
 # Check fake brp data
 glimpse(fake_brp_messages_json)
 
-write_csv(fake_brp_messages_json, here::here("prepoc", "fake_brp_message_data.csv"))
+write_csv(fake_brp_messages_json, here::here("data", "fake_brp_message_data.csv"))
 
 
 # Make summary data table -----------------------
@@ -126,4 +126,4 @@ fake_brp_summary_data <- fake_brp_messages_json |>
 
 glimpse(fake_brp_summary_data)
 
-#write_csv(fake_brp_summary_data, here::here("prepoc", "fake_brp_summary_data.csv"))
+#write_csv(fake_brp_summary_data, here::here("data", "fake_brp_summary_data.csv"))

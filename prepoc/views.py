@@ -16,13 +16,20 @@ def listMessages(request):
         return Response(serializer.data)
 
 ## Bulk messages
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 def bulkMessages(request):
-
+    
     if request.method == 'GET':
         ms = messages.objects.all()
         serializer = messagesSerializer(ms, many=True)
         return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = messagesSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 ## Get messages calls    
