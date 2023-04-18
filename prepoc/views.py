@@ -33,7 +33,7 @@ def bulkMessages(request):
 
 
 ## Get messages calls    
-@api_view(['GET', 'PUT'])
+@api_view(['GET'])
 def getMessages(request, id):
 
     try:
@@ -45,12 +45,13 @@ def getMessages(request, id):
         serializer = messagesSerializer(ms)
         return Response(serializer.data)
     
-    elif request.method == 'PUT':
-        serializer = messagesSerializer(ms, data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    # commented out, denk niet dat ik deze call nodig heb in de prototype
+    #elif request.method == 'PUT':
+    #    serializer = messagesSerializer(ms, data=request.data)
+    #    if serializer.is_valid():
+    #        serializer.save()
+    #        return Response(serializer.data)
+    #    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 # messagesSummary call

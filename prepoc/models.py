@@ -9,15 +9,9 @@ class messages(models.Model):
         return self.messageId
 
 class messagesSummary(models.Model):
-    messageId = models.CharField(max_length=100)
-    generationDate = models.CharField(max_length=100)
-    endpoint = models.CharField(max_length=100)
-    callMethods = models.CharField(max_length=100)
-    messageSize = models.CharField(max_length=100)
-    senderId = models.CharField(max_length=100)
-    recipientId = models.CharField(max_length=100)
-    callResponseTimeMs = models.CharField(max_length=100)
-    callResponse = models.CharField(max_length=100)
+    numberOfMessages = models.IntegerField(blank=True, null=True)
+    messageStatus = models.CharField(max_length=50, blank=True, null=True)
+    messagePriority = models.CharField(max_length=50, blank=True, null=True)
 
     def __str__(self):
         return self.messageId
