@@ -1,26 +1,26 @@
 
+<!-- language: lang-none -->
 
-██████╗      ██╗ █████╗ ███╗   ██╗ ██████╗  ██████╗      █████╗ ██████╗ ██╗  
-██╔══██╗     ██║██╔══██╗████╗  ██║██╔════╝ ██╔═══██╗    ██╔══██╗██╔══██╗██║  
-██║  ██║     ██║███████║██╔██╗ ██║██║  ███╗██║   ██║    ███████║██████╔╝██║  
-██║  ██║██   ██║██╔══██║██║╚██╗██║██║   ██║██║   ██║    ██╔══██║██╔═══╝ ██║  
-██████╔╝╚█████╔╝██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝    ██║  ██║██║     ██║  
-╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝     ╚═╝  ╚═╝╚═╝     ╚═╝  
-                                                                             
-██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ████████╗██╗   ██╗██████╗ ███████╗
-██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔════╝
-██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║   ██║    ╚████╔╝ ██████╔╝█████╗  
-██╔═══╝ ██╔══██╗██║   ██║   ██║   ██║   ██║   ██║     ╚██╔╝  ██╔═══╝ ██╔══╝  
-██║     ██║  ██║╚██████╔╝   ██║   ╚██████╔╝   ██║      ██║   ██║     ███████╗
-╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝     ╚══════╝
-                                                                             
-███╗   ███╗██████╗ ███████╗                                                  
-████╗ ████║██╔══██╗██╔════╝                                                  
-██╔████╔██║██████╔╝███████╗                                                  
-██║╚██╔╝██║██╔══██╗╚════██║                                                  
-██║ ╚═╝ ██║██████╔╝███████║                                                  
-╚═╝     ╚═╝╚═════╝ ╚══════╝                                                  
-                                                                             
+    ██████╗      ██╗ █████╗ ███╗   ██╗ ██████╗  ██████╗      █████╗ ██████╗ ██╗  
+    ██╔══██╗     ██║██╔══██╗████╗  ██║██╔════╝ ██╔═══██╗    ██╔══██╗██╔══██╗██║  
+    ██║  ██║     ██║███████║██╔██╗ ██║██║  ███╗██║   ██║    ███████║██████╔╝██║  
+    ██║  ██║██   ██║██╔══██║██║╚██╗██║██║   ██║██║   ██║    ██╔══██║██╔═══╝ ██║  
+    ██████╔╝╚█████╔╝██║  ██║██║ ╚████║╚██████╔╝╚██████╔╝    ██║  ██║██║     ██║  
+    ╚═════╝  ╚════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝     ╚═╝  ╚═╝╚═╝     ╚═╝  
+                                                                                 
+    ██████╗ ██████╗  ██████╗ ████████╗ ██████╗ ████████╗██╗   ██╗██████╗ ███████╗
+    ██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔═══██╗╚══██╔══╝╚██╗ ██╔╝██╔══██╗██╔════╝
+    ██████╔╝██████╔╝██║   ██║   ██║   ██║   ██║   ██║    ╚████╔╝ ██████╔╝█████╗  
+    ██╔═══╝ ██╔══██╗██║   ██║   ██║   ██║   ██║   ██║     ╚██╔╝  ██╔═══╝ ██╔══╝  
+    ██║     ██║  ██║╚██████╔╝   ██║   ╚██████╔╝   ██║      ██║   ██║     ███████╗
+    ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝     ╚══════╝
+                                                                                 
+    ███╗   ███╗██████╗ ███████╗                                                  
+    ████╗ ████║██╔══██╗██╔════╝                                                  
+    ██╔████╔██║██████╔╝███████╗                                                  
+    ██║╚██╔╝██║██╔══██╗╚════██║                                                  
+    ██║ ╚═╝ ██║██████╔╝███████║                                                  
+    ╚═╝     ╚═╝╚═════╝ ╚══════╝                                                                                                       
 
 Introduction:
 Welcome to the prototype repository for eliciting requirements and assessing the impact of implementing a REST API for a selection of 
@@ -37,27 +37,27 @@ that we can create an API that truly meets the needs of all involved.
 
 Outline of the repo:
 
-repo/
-├─ prepoc/ --> dir containing my implementation of the django code
-│  ├─ __pycache__/
-│  ├─ migrations/
-│  ├─ templates/
-│  │  ├─ docs.html --> previous template file, not using now
-│  │  ├─ swagger-ui.html --> template file for setting up the swagger for demos
-│  ├─ admin.py
-│  ├─ asgi.py
-│  ├─ models.py
-│  ├─ serializers.py
-│  ├─ settings.py
-│  ├─ urls.py
-│  ├─ views.py
-│  ├─ wsgi.py
-│  ├─ __init__.py
-├─ .gitignore
-├─ dataGenerator.R --> R script for generating the fake data used in this project
-├─ PoC.drawio --> drawio to outline the proces
-├─ README.txt --> this file :)
-
+<!-- language: lang-none -->
+    repo/
+    ├─ prepoc/ --> dir containing my implementation of the django code
+    │  ├─ __pycache__/
+    │  ├─ migrations/
+    │  ├─ templates/
+    │  │  ├─ docs.html --> previous template file, not using now
+    │  │  ├─ swagger-ui.html --> template file for setting up the swagger for demos
+    │  ├─ admin.py
+    │  ├─ asgi.py
+    │  ├─ models.py
+    │  ├─ serializers.py
+    │  ├─ settings.py
+    │  ├─ urls.py
+    │  ├─ views.py
+    │  ├─ wsgi.py
+    │  ├─ __init__.py
+    ├─ .gitignore
+    ├─ dataGenerator.R --> R script for generating the fake data used in this project
+    ├─ PoC.drawio --> drawio to outline the proces
+    ├─ README.txt --> this file :)
 
 Resources used: 
 Django: https://www.django-rest-framework.org/
