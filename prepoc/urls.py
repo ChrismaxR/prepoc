@@ -21,7 +21,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('api_schema/', get_schema_view(
-        title='Prototype MBS API',
+        title='Voorbeeld MBS API',
         description=''
     ), name='api_schema'),
     path('documentation/', TemplateView.as_view(
